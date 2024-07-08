@@ -1,6 +1,9 @@
 import styles from "../style" ;
 import { discount, robot } from "../assets";
 import  GetStarted  from "./GetStarted";
+import React from "react";
+import Project from "./Project";
+import Button from "./Button";
 
 const Hero = () => (
     <section id='home' className={`flex md:flex-row flex-col 
@@ -32,7 +35,6 @@ const Hero = () => (
             <GetStarted />
            </div>
         </div>
-
         <h1 className="font-poppins font-semibold 
            ss:text-[68px] text-[52px] text-white 
            ss:leading-[100px] leading-[75px] w-full">Payment Method.</h1>
@@ -41,6 +43,13 @@ const Hero = () => (
            libero, repudia repellat eaque! iis eveniet impedit cupiditate.</p>
 
       </div>
+      <Project />
+      <button type="button" className={`py-4 px-6 bg-blue-gradient 
+     font-poppins font-medium text-[18px] 
+     text-primary rounded-[10px] w-15 outline-none ${styles}`}>
+      <a href="#pro" target="blank">My Projects</a>
+    </button>
+
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
         <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
 
